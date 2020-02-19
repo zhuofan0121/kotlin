@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be075bce-62fc-482c-8a8a-5ee33a6d876c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/TestMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/TestMain.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +33,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="hello" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="hello" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -107,7 +101,7 @@
       <recent name="$PROJECT_DIR$/.idea/codeStyles" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestMain">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="TestMain" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,8 +198,22 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="hello.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.hello [clean]" />
         <item itemvalue="Gradle.hello [testClasses]" />
         <item itemvalue="Gradle.hello [ktlintFormat]" />
@@ -250,12 +258,20 @@
       <option name="project" value="LOCAL" />
       <updated>1581715533274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test main">
+      <created>1581716943920</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581716943920</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add commit" />
+    <MESSAGE value="Test main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test main" />
   </component>
   <component name="WindowStateProjectService">
     <state x="398" y="173" key="#Project_Structure" timestamp="1581712056332">
@@ -270,42 +286,48 @@
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="518" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.966@0.23.1680.966" timestamp="1581711397780" />
-    <state x="406" y="113" key="CommitChangelistDialog2" timestamp="1581715533187">
+    <state x="406" y="113" key="CommitChangelistDialog2" timestamp="1581716943809">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state x="406" y="113" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1581715533187" />
+    <state x="406" y="113" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1581716943809" />
     <state x="663" y="411" key="Github.ShareDialog" timestamp="1581715771464">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="663" y="411" key="Github.ShareDialog/0.23.1680.966@0.23.1680.966" timestamp="1581715771464" />
-    <state width="1401" height="259" key="GridCell.Tab.0.bottom" timestamp="1581716220507">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1368" height="259" key="GridCell.Tab.0.bottom" timestamp="1582144047939">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581716220507" />
-    <state width="1401" height="259" key="GridCell.Tab.0.center" timestamp="1581716220506">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1401" height="259" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
+    <state width="1368" height="259" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1582144047939" />
+    <state width="1368" height="259" key="GridCell.Tab.0.center" timestamp="1582144047938">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581716220506" />
-    <state width="1401" height="259" key="GridCell.Tab.0.left" timestamp="1581716220505">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1401" height="259" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
+    <state width="1368" height="259" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1582144047938" />
+    <state width="1368" height="259" key="GridCell.Tab.0.left" timestamp="1582144047938">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581716220505" />
-    <state width="1401" height="259" key="GridCell.Tab.0.right" timestamp="1581716220506">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state width="1401" height="259" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581721698570" />
+    <state width="1368" height="259" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1582144047938" />
+    <state width="1368" height="259" key="GridCell.Tab.0.right" timestamp="1582144047939">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581716220506" />
+    <state width="1401" height="259" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
+    <state width="1368" height="259" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1582144047939" />
     <state x="286" y="89" key="SettingsEditor" timestamp="1581539440086">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="286" y="89" key="SettingsEditor/0.23.1680.966@0.23.1680.966" timestamp="1581539440086" />
-    <state x="398" y="247" key="Vcs.Push.Dialog.v2" timestamp="1581715558668">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state x="398" y="247" key="Vcs.Push.Dialog.v2" timestamp="1582144202290">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
-    <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1581715558668" />
-    <state x="453" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1581710123902">
-      <screen x="0" y="23" width="1680" height="966" />
+    <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1581716953315" />
+    <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1582144202290" />
+    <state x="453" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1582142882096">
+      <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="453" y="340" key="com.intellij.ide.util.TipDialog/0.23.1680.966@0.23.1680.966" timestamp="1581710123902" />
+    <state x="453" y="340" key="com.intellij.ide.util.TipDialog/0.23.1680.967@0.23.1680.967" timestamp="1582142882096" />
     <state x="463" y="233" key="run.anything.popup" timestamp="1581539436634">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
