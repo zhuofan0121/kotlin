@@ -1,4 +1,6 @@
 import io.ktor.application.call
+import io.ktor.http.HttpStatusCode
+import io.ktor.response.respond
 import io.ktor.response.respondText
 import io.ktor.routing.get
 import io.ktor.routing.routing
@@ -15,7 +17,23 @@ fun main() {
     embeddedServer(Netty, 8080) {
         routing {
             get("/") {
-                call.respondText("Hello World!")
+                call.respondText(hello())
+            }
+            get("/add/{first}/{second}") {
+                try {
+                    val first = call.parameters["first"]!!.toInt()
+                    val second = call.parameters["second"]!!.toInt()
+                    //call.respondText { "$first and $second" }
+                    call.respondText((first + second).toString())
+                } catch (e: Exception) {
+                    println(e)
+                    call.respond("Bad user")
+                    call.respond(HttpStatusCode.BadRequest)
+                }
+
+            }
+            get("/test") {
+                call.respondText { "Testing" }
             }
         }
     }.start(wait = true)
