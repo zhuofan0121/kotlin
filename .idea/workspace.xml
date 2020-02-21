@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/TestMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/TestMain.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582146676930</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="respond with Json using Gson">
+      <created>1582316561475</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582316561475</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -287,7 +295,8 @@
     <MESSAGE value="Test main" />
     <MESSAGE value="Kotlin WebApi" />
     <MESSAGE value="handle bad request" />
-    <option name="LAST_COMMIT_MESSAGE" value="handle bad request" />
+    <MESSAGE value="respond with Json using Gson" />
+    <option name="LAST_COMMIT_MESSAGE" value="respond with Json using Gson" />
   </component>
   <component name="WindowStateProjectService">
     <state x="398" y="173" key="#Project_Structure" timestamp="1581712056332">
@@ -302,44 +311,44 @@
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="518" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.966@0.23.1680.966" timestamp="1581711397780" />
-    <state x="406" y="113" key="CommitChangelistDialog2" timestamp="1582146676825">
+    <state x="880" y="71" key="CommitChangelistDialog2" timestamp="1582318234817">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="406" y="113" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1581716943809" />
-    <state x="406" y="113" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1582146676825" />
+    <state x="880" y="71" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1582318234817" />
     <state x="663" y="411" key="Github.ShareDialog" timestamp="1581715771464">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="663" y="411" key="Github.ShareDialog/0.23.1680.966@0.23.1680.966" timestamp="1581715771464" />
-    <state width="1368" height="259" key="GridCell.Tab.0.bottom" timestamp="1582316459821">
+    <state width="1368" height="259" key="GridCell.Tab.0.bottom" timestamp="1582317469547">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state width="1401" height="259" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
-    <state width="1368" height="259" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1582316459821" />
-    <state width="1368" height="259" key="GridCell.Tab.0.center" timestamp="1582316459820">
+    <state width="1368" height="259" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1582317469547" />
+    <state width="1368" height="259" key="GridCell.Tab.0.center" timestamp="1582317469546">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state width="1401" height="259" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
-    <state width="1368" height="259" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1582316459820" />
-    <state width="1368" height="259" key="GridCell.Tab.0.left" timestamp="1582316459819">
+    <state width="1368" height="259" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1582317469546" />
+    <state width="1368" height="259" key="GridCell.Tab.0.left" timestamp="1582317469545">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state width="1401" height="259" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581721698570" />
-    <state width="1368" height="259" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1582316459819" />
-    <state width="1368" height="259" key="GridCell.Tab.0.right" timestamp="1582316459820">
+    <state width="1368" height="259" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1582317469545" />
+    <state width="1368" height="259" key="GridCell.Tab.0.right" timestamp="1582317469547">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state width="1401" height="259" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
-    <state width="1368" height="259" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1582316459820" />
+    <state width="1368" height="259" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1582317469547" />
     <state x="286" y="89" key="SettingsEditor" timestamp="1581539440086">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="286" y="89" key="SettingsEditor/0.23.1680.966@0.23.1680.966" timestamp="1581539440086" />
-    <state x="398" y="247" key="Vcs.Push.Dialog.v2" timestamp="1582146683159">
+    <state x="398" y="247" key="Vcs.Push.Dialog.v2" timestamp="1582316567249">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1581716953315" />
-    <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1582146683159" />
+    <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1582316567249" />
     <state x="453" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1582315696242">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
