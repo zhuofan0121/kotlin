@@ -17,7 +17,7 @@ fun hello(): String {
 data class AddResult(val first: Int, val second: Int, val result: Int)
 
 fun Application.adder() {
-    var count = 0;
+    val counts: MutableMap<String, Int> = mutableMapOf()
     install(ContentNegotiation) {
         gson { }
     }
@@ -25,8 +25,11 @@ fun Application.adder() {
         get("/") {
             call.respondText(hello())
         }
-        get("/count") {
-            call.respondText((count++).toString())
+        get("/count/{first}") {
+            val firstCount = counts.getOrDefault(call.parameters["first"], 0) + 1
+            counts[call.parameters["first"].toString()] = firstCount
+            println(call.parameters["first"] + ": $firstCount")
+            call.respondText(firstCount.toString())
         }
         get("/add/{first}/{second}") {
             try {
