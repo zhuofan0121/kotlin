@@ -17,12 +17,16 @@ fun hello(): String {
 data class AddResult(val first: Int, val second: Int, val result: Int)
 
 fun Application.adder() {
+    var count = 0;
     install(ContentNegotiation) {
         gson { }
     }
     routing {
         get("/") {
             call.respondText(hello())
+        }
+        get("/count") {
+            call.respondText((count++).toString())
         }
         get("/add/{first}/{second}") {
             try {
