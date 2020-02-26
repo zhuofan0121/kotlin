@@ -14,7 +14,7 @@ import io.ktor.server.netty.Netty
 fun hello(): String {
     return "Hello World!"
 }
-data class AddResult(val first: Int, val second: Int, val result: Int)
+data class Result(val operation: String, val first: Int, val second: Int, val result: Int)
 
 fun Application.adder() {
     val counts: MutableMap<String, Int> = mutableMapOf()
@@ -31,14 +31,22 @@ fun Application.adder() {
             println(call.parameters["first"] + ": $firstCount")
             call.respondText(firstCount.toString())
         }
-        get("/add/{first}/{second}") {
+        get("/{operation}/{first}/{second}") {
             try {
+                val operation = call.parameters["operation"]!!
                 val first = call.parameters["first"]!!.toInt()
                 val second = call.parameters["second"]!!.toInt()
-                val addResult = AddResult(first, second, (first + second))
-                call.respond(addResult)
+                val result = when (operation) {
+                    "add" -> first + second
+                    "subtract" -> first - second
+                    "multiply" -> first * second
+                    "divide" -> first / second
+                    else -> throw Exception("$operation is not supported")
+                }
+                val operationResult = Result(operation, first, second, result)
+                call.respond(operationResult)
             } catch (e: Exception) {
-                call.respond(HttpStatusCode.BadRequest)
+                call.respond(HttpStatusCode.BadRequest, e)
             }
         }
     }

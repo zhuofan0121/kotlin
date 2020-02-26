@@ -31,6 +31,24 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="hello" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hello" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hello" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+                <item name="test" type="396b929e:GradleViewContributor$SourceSetNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hello" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
@@ -299,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582318907505</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="print every key and value to see why safari browser refresh everything each time">
+      <created>1582321006766</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582321006766</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -310,7 +335,8 @@
     <MESSAGE value="respond with Json using Gson" />
     <MESSAGE value="Refactor main into Application" />
     <MESSAGE value="count++ every time refreshing" />
-    <option name="LAST_COMMIT_MESSAGE" value="count++ every time refreshing" />
+    <MESSAGE value="print every key and value to see why safari browser refresh everything each time" />
+    <option name="LAST_COMMIT_MESSAGE" value="print every key and value to see why safari browser refresh everything each time" />
   </component>
   <component name="WindowStateProjectService">
     <state x="398" y="173" key="#Project_Structure" timestamp="1581712056332">
@@ -325,53 +351,54 @@
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="518" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.966@0.23.1680.966" timestamp="1581711397780" />
-    <state x="880" y="71" key="CommitChangelistDialog2" timestamp="1582318907408">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state x="604" y="65" key="CommitChangelistDialog2" timestamp="1582749049748">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state x="406" y="113" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1581716943809" />
+    <state x="604" y="65" key="CommitChangelistDialog2/0.23.1680.966@0.23.1680.966" timestamp="1582749049748" />
     <state x="880" y="71" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1582318345796" />
-    <state x="880" y="71" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1582318907408" />
+    <state x="880" y="71" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1582321006668" />
     <state x="663" y="411" key="Github.ShareDialog" timestamp="1581715771464">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="663" y="411" key="Github.ShareDialog/0.23.1680.966@0.23.1680.966" timestamp="1581715771464" />
-    <state width="1368" height="259" key="GridCell.Tab.0.bottom" timestamp="1582320915941">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1368" height="259" key="GridCell.Tab.0.bottom" timestamp="1582748952988">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
+    <state width="1368" height="259" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1582748952988" />
     <state width="1368" height="259" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1582317469547" />
-    <state width="1368" height="259" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1582320915941" />
-    <state width="1368" height="259" key="GridCell.Tab.0.center" timestamp="1582320915940">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1368" height="259" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1582321100344" />
+    <state width="1368" height="259" key="GridCell.Tab.0.center" timestamp="1582748952987">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
+    <state width="1368" height="259" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1582748952987" />
     <state width="1368" height="259" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1582317469546" />
-    <state width="1368" height="259" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1582320915940" />
-    <state width="1368" height="259" key="GridCell.Tab.0.left" timestamp="1582320915939">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1368" height="259" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1582321100344" />
+    <state width="1368" height="259" key="GridCell.Tab.0.left" timestamp="1582748952986">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1581721698570" />
+    <state width="1368" height="259" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1582748952986" />
     <state width="1368" height="259" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1582317469545" />
-    <state width="1368" height="259" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1582320915939" />
-    <state width="1368" height="259" key="GridCell.Tab.0.right" timestamp="1582320915941">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1368" height="259" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1582321100343" />
+    <state width="1368" height="259" key="GridCell.Tab.0.right" timestamp="1582748952988">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state width="1401" height="259" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1581721698571" />
+    <state width="1368" height="259" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1582748952988" />
     <state width="1368" height="259" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1582317469547" />
-    <state width="1368" height="259" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1582320915941" />
+    <state width="1368" height="259" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1582321100344" />
     <state x="286" y="89" key="SettingsEditor" timestamp="1581539440086">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="286" y="89" key="SettingsEditor/0.23.1680.966@0.23.1680.966" timestamp="1581539440086" />
-    <state x="398" y="247" key="Vcs.Push.Dialog.v2" timestamp="1582318386213">
-      <screen x="0" y="23" width="1680" height="967" />
+    <state x="398" y="248" key="Vcs.Push.Dialog.v2" timestamp="1582321013401">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.966@0.23.1680.966" timestamp="1581716953315" />
     <state x="398" y="247" key="Vcs.Push.Dialog.v2/0.23.1680.967@0.23.1680.967" timestamp="1582318386213" />
-    <state x="453" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1582315696242">
-      <screen x="0" y="23" width="1680" height="967" />
+    <state x="398" y="248" key="Vcs.Push.Dialog.v2/0.23.1680.972@0.23.1680.972" timestamp="1582321013401" />
+    <state x="453" y="340" key="com.intellij.ide.util.TipDialog" timestamp="1582746944496">
+      <screen x="0" y="23" width="1680" height="966" />
     </state>
-    <state x="453" y="340" key="com.intellij.ide.util.TipDialog/0.23.1680.966@0.23.1680.966" timestamp="1581710123902" />
+    <state x="453" y="340" key="com.intellij.ide.util.TipDialog/0.23.1680.966@0.23.1680.966" timestamp="1582746944496" />
     <state x="453" y="340" key="com.intellij.ide.util.TipDialog/0.23.1680.967@0.23.1680.967" timestamp="1582315696242" />
     <state x="463" y="233" key="run.anything.popup" timestamp="1581539436634">
       <screen x="0" y="23" width="1680" height="966" />
