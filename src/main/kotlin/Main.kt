@@ -4,9 +4,11 @@ import io.ktor.application.install
 import io.ktor.features.ContentNegotiation
 import io.ktor.gson.gson
 import io.ktor.http.HttpStatusCode
+import io.ktor.request.receive
 import io.ktor.response.respond
 import io.ktor.response.respondText
 import io.ktor.routing.get
+import io.ktor.routing.post
 import io.ktor.routing.routing
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
@@ -14,6 +16,8 @@ import io.ktor.server.netty.Netty
 fun hello(): String {
     return "Hello World!"
 }
+
+data class CalculatorRequest(val operation: String, val first: Int, val second: Int)
 data class Result(val operation: String, val first: Int, val second: Int, val result: Int)
 
 fun Application.adder() {
@@ -30,6 +34,23 @@ fun Application.adder() {
             counts[call.parameters["first"].toString()] = firstCount
             println(call.parameters["first"] + ": $firstCount")
             call.respondText(firstCount.toString())
+        }
+        post("/calculate") {
+            try {
+                val request = call.receive<CalculatorRequest>()
+                val result = when (request.operation) {
+                    "add" -> request.first + request.second
+                    "subtract" -> request.first - request.second
+                    "multiply" -> request.first * request.second
+                    "divide" -> request.first / request.second
+                    else -> throw Exception("${request.operation} is not supported")
+                }
+                var response = Result(request.operation, request.first, request.second, result)
+                call.respond(response)
+            } catch (e: Exception) {
+                call.respond(HttpStatusCode.BadRequest)
+            }
+
         }
         get("/{operation}/{first}/{second}") {
             try {
